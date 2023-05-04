@@ -77,12 +77,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django-project',
+        'CONN_MAX_AGE': 1800,
+        'USER': 'root',
+        'PASSWORD': 'cxl123',
+        'HOST': 'host.docker.internal',
+        'PORT': '3310'
     }
 }
 
@@ -124,4 +125,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')

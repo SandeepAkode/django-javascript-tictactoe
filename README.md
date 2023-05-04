@@ -1,1 +1,5 @@
-This project is contains tic tac toe
+# Tic Tac Toe
+## Implemented tictactoe using javascript deployed using docker
+
+# Particles JS
+## Checkout interactive particles 
